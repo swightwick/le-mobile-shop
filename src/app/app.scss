@@ -25,6 +25,13 @@ body, p, a{
 h1, h2, h3{
     font-family: 'Montserrat', sans-serif;
 }
+.logo{
+    width: 12rem;
+    margin: 0 auto;
+    display: block;
+    padding: 1rem 0;
+}
+
 
 .toolbar-background {
     background: $le-grey;
