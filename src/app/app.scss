@@ -14,3 +14,25 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+$le-grey: #2A2A2A;
+$le-gold: #a29061;
+$le-golddark: desaturate( $le-gold, 20% );
+
+body, p, a{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.toolbar-background {
+    background: $le-grey;
+    color: white;
+}
+
+.tab-button.has-icon[aria-selected=true], .tab-button.has-icon[aria-selected=true] .tab-button-icon {
+    color: #a29061;
+}
+
+
