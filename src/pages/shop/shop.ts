@@ -8,22 +8,17 @@ import { ProductPage } from '../product/product';
 })
 export class ShopPage {
 
-  items = [
-    'Special Offers',
-    'T-shirts',
-    'Sweatshirts',
-    'Shorts',
-    'Hats',
-    'Accessories'
-  ];
-
-  // itemSelected(item: string) {
-  //   console.log("Selected Item", item);
-  // }
+  tshirts: any;
 
   constructor(public navCtrl: NavController) {
-
+    this.tshirts = [
+      { name: 'ABOVE & BELOW', image: 'above-below-tshirt.jpg' },
+      { name: 'CREAM', image: 'sprocket.jpg' },
+      { name: 'SPROCKET SCRIPT', image: 'cid.jpg'},
+      { name: 'CASH RUINS', image: 'cream.jpg'}
+      ];
   }
+
   aboveBelowLink(){
     this.navCtrl.push(ProductPage);
   }

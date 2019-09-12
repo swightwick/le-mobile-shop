@@ -14,6 +14,5 @@ export class HomePage {
     this.navCtrl.push(ProductPage);
   }
 
-  startAutoplay(){}
 }
 

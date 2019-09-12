@@ -1,0 +1,27 @@
+page-electroneum {
+    .content, .toolbar-background{
+        background: $etn-blue;
+    }
+    .bar-button .text{
+        color: #fff;
+    }
+    .etn{
+        &--logo{
+            width: 70%;
+            margin: 0 auto;
+            display: block;
+            margin-top: 25%;
+            margin-bottom: 20px;
+        }
+    }
+    p{
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0;
+        font-weight: bold;
+        &:nth-child(3){
+            font-size: 4rem;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { ActionSheetController } from 'ionic-angular'
+import { ActionSheetController, ModalController } from 'ionic-angular'
+import { Electroneum } from '../electroneum/electroneum';
 
 @Component({
   selector: 'page-product',
@@ -7,7 +8,10 @@ import { ActionSheetController } from 'ionic-angular'
 })
 export class ProductPage {
 
-constructor(public actionSheetCtrl: ActionSheetController) {}
+  
+
+
+constructor(public actionSheetCtrl: ActionSheetController, public modalCtrl: ModalController) {}
 
   presentActionSheet() {
 
@@ -47,6 +51,11 @@ constructor(public actionSheetCtrl: ActionSheetController) {}
   });
 
   actionSheet.present();
+  }
+  
+  presentModal() {
+    const modal = this.modalCtrl.create(Electroneum);
+    modal.present();
   }
 
   cartAnimation(){

@@ -6,23 +6,13 @@
 
 <ion-content>
     <div padding>
-      <div class="product--list">
-        <a (click)="aboveBelowLink()">
-          <img src="assets/imgs/product/above-below-tshirt.jpg">
-          <h3>ABOVE & BELOW</h3>
-        </a>
-      </div>
-      <div class="product--list">
-        <img src="assets/imgs/tees/sprocket.jpg">
-        <h3>SPROCKET SCRIPT</h3>
-      </div>
-      <div class="product--list">
-        <img src="assets/imgs/tees/cid.jpg">
-        <h3>CID</h3>
-      </div>
-      <div class="product--list">
-        <img src="assets/imgs/tees/cream.jpg">
-        <h3>CASH RUINS</h3>
-      </div>
+        <div *ngFor="let tshirt of tshirts">
+          <a (click)="aboveBelowLink()">
+            <div class="product--list">
+              <img src="assets/imgs/tees/{{tshirt.image}}">
+              <h3>{{tshirt.name}}</h3>
+            </div>
+          </a>
+        </div>
     </div>
 </ion-content>

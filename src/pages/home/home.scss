@@ -1,24 +1,32 @@
-.home--{
-    &header{
-        text-align: center;
-        h2{
-            margin-bottom: 0;
-            margin-top: 2rem;
-        }
-    }
-    &promoProduct{
-        position: relative;
-        margin-top: 3rem;
-        h3{
-            position: absolute;
-            width: 100%;
+page-home{
+    .home{
+        &--header{
             text-align: center;
-            margin-top: 7rem !important;
-            color: white;
-            z-index: 999;
+            h2{
+                margin-bottom: 0;
+                margin-top: 2rem;
+            }
         }
-        img{
+        &--content{
+            padding-top: 16px;
+            p{
+                padding: 0 16px;
+            }
+        }
+        &--promoProduct{
             position: relative;
+            margin-top: 3rem;
+            h3{
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                margin-top: 7rem !important;
+                color: white;
+                z-index: 999;
+            }
+            img{
+                position: relative;
+            }
         }
     }
 }

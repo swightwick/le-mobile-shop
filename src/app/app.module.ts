@@ -1,19 +1,19 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { IonicApp, IonicModule, IonicErrorHandler, IonicPageModule } from 'ionic-angular';
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-
-import { ShopPage } from '../pages/shop/shop';
-import { ProductPage } from '../pages/product/product';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
-import { Splash } from '../pages/splash/splash';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { ComponentsModule } from '../components/components.module';
+import { ShopPage } from '../pages/shop/shop';
+import { ProductPage } from '../pages/product/product';
+import { StorePage } from '../pages/stores/stores';
+import { HomePage } from '../pages/home/home';
+import { TabsPage } from '../pages/tabs/tabs';
+import { Splash } from '../pages/splash/splash';
+import { Electroneum } from '../pages/electroneum/electroneum';
+
 
 
 @NgModule({
@@ -21,23 +21,23 @@ import { ComponentsModule } from '../components/components.module';
     MyApp,
     ShopPage,
     ProductPage,
-    ContactPage,
+    StorePage,
     HomePage,
     TabsPage,
-    Splash
+    Splash,
+    Electroneum
   ],
   imports: [
     BrowserModule,
-    ComponentsModule,
-    IonicModule.forRoot(MyApp),
-    IonicPageModule.forChild(ContactPage)
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     ShopPage,
     ProductPage,
-    ContactPage,
+    Electroneum,
+    StorePage,
     HomePage,
     Splash,
     TabsPage
