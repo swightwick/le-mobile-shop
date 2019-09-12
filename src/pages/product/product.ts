@@ -60,7 +60,6 @@ constructor(public actionSheetCtrl: ActionSheetController, public modalCtrl: Mod
 
   cartAnimation(){
     var basketCounter = document.getElementById('basket--counter');
-    console.log(basketCounter)
     basketCounter.innerHTML = '1';
   }
 
