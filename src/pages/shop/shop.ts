@@ -24,6 +24,10 @@ export class ShopPage {
   constructor(public navCtrl: NavController) {
 
   }
+  aboveBelowLink(){
+    this.navCtrl.push(ProductPage);
+  }
+
   itemSelected(event, item) {
     console.log("Selected Item", item);
     this.navCtrl.push(ProductPage, {

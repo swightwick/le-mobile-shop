@@ -1,54 +1,60 @@
-<platform name="android">
-    <!-- you can use any density that exists in the Android project -->
-    <splash src="res/screen/android/splash-land-hdpi.png" density="land-hdpi"/>
-    <splash src="res/screen/android/splash-land-ldpi.png" density="land-ldpi"/>
-    <splash src="res/screen/android/splash-land-mdpi.png" density="land-mdpi"/>
-    <splash src="res/screen/android/splash-land-xhdpi.png" density="land-xhdpi"/>
-
-    <splash src="res/screen/android/splash-port-hdpi.png" density="port-hdpi"/>
-    <splash src="res/screen/android/splash-port-ldpi.png" density="port-ldpi"/>
-    <splash src="res/screen/android/splash-port-mdpi.png" density="port-mdpi"/>
-    <splash src="res/screen/android/splash-port-xhdpi.png" density="port-xhdpi"/>
-</platform>
-
-<platform name="ios">
-    <!-- There are two mechanisms for showing launch images.
-      Legacy method (supports all devices except iPad Pro 12.9):
-     Note: Images are determined by width and height. The following are supported -->
-    <splash src="res/screen/ios/Default~iphone.png" width="320" height="480"/>
-    <splash src="res/screen/ios/Default@2x~iphone.png" width="640" height="960"/>
-    <splash src="res/screen/ios/Default-Portrait~ipad.png" width="768" height="1024"/>
-    <splash src="res/screen/ios/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
-    <splash src="res/screen/ios/Default-Landscape~ipad.png" width="1024" height="768"/>
-    <splash src="res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
-    <splash src="res/screen/ios/Default-568h@2x~iphone.png" width="640" height="1136"/>
-    <splash src="res/screen/ios/Default-667h.png" width="750" height="1334"/>
-    <splash src="res/screen/ios/Default-736h.png" width="1242" height="2208"/>
-    <splash src="res/screen/ios/Default-Landscape-736h.png" width="2208" height="1242"/>
-    <!-- Storyboard method (supports all devices):
-       Important: If you use the storyboard method, legacy images are 
-       copied but ignored.
-       Note: images are determined by scale, idiom, and size traits. The following
-      are suggested based on current device form factors -->
-    <splash src="res/screen/ios/Default@2x~universal~anyany.png" />
-    <splash src="res/screen/ios/Default@2x~universal~comany.png" />
-    <splash src="res/screen/ios/Default@2x~universal~comcom.png" />
-    <splash src="res/screen/ios/Default@3x~universal~anyany.png" />
-    <splash src="res/screen/ios/Default@3x~universal~anycom.png" />
-    <splash src="res/screen/ios/Default@3x~universal~comany.png" />
-
-</platform>
-
-<!-- Configuration using MRT concept (Recommended, see "Windows-specific information" section for details): -->
-<platform name="windows">
-    <splash src="res/screen/windows/splashscreen.png" target="SplashScreen"/>
-    <splash src="res/screen/windows/splashscreenphone.png" target="SplashScreenPhone"/>
-</platform>
-
-<!-- Configuration using image size: -->
-<platform name="windows">
-    <splash src="res/screen/windows/splashscreen.png" width="620" height="300"/>
-    <splash src="res/screen/windows/splashscreenphone.png" width="1152" height="1920"/>
-</platform>
-
-<preference name="SplashScreenDelay" value="10000" />
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>MyApp</name>
+    <description>An awesome Ionic/Cordova app.</description>
+    <author email="hi@ionicframework.com" href="http://ionicframework.com/">Ionic Framework Team</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="ScrollEnabled" value="false" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="FadeSplashScreenDuration" value="300" />
+    <preference name="SplashShowOnlyFirstTime" value="false" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="FadeSplashScreen" value="true" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <platform name="android">
+        <splash density="land-hdpi" src="res/screen/android/splash-land-hdpi.png" />
+        <splash density="land-ldpi" src="res/screen/android/splash-land-ldpi.png" />
+        <splash density="land-mdpi" src="res/screen/android/splash-land-mdpi.png" />
+        <splash density="land-xhdpi" src="res/screen/android/splash-land-xhdpi.png" />
+        <splash density="land-xxhdpi" src="res/screen/android/splash-land-xxhdpi.png" />
+        <splash density="port-hdpi" src="res/screen/android/splash-port-hdpi.png" />
+        <splash density="port-ldpi" src="res/screen/android/splash-port-ldpi.png" />
+        <splash density="port-mdpi" src="res/screen/android/splash-port-mdpi.png" />
+        <splash density="port-xhdpi" src="res/screen/android/splash-port-xhdpi.png" />
+        <splash density="port-xxhdpi" src="res/screen/android/splash-port-xxhdpi.png" />
+    </platform>
+    <platform name="ios">
+        <splash height="480" src="res/screen/ios/Default~iphone.png" width="320" />
+        <splash height="960" src="res/screen/ios/Default@2x~iphone.png" width="640" />
+        <splash height="1024" src="res/screen/ios/Default-Portrait~ipad.png" width="768" />
+        <splash height="2048" src="res/screen/ios/Default-Portrait@2x~ipad.png" width="1536" />
+        <splash height="768" src="res/screen/ios/Default-Landscape~ipad.png" width="1024" />
+        <splash height="1536" src="res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" />
+        <splash height="1136" src="res/screen/ios/Default-568h@2x~iphone.png" width="640" />
+        <splash height="1334" src="res/screen/ios/Default-667h.png" width="750" />
+        <splash height="2208" src="res/screen/ios/Default-736h.png" width="1242" />
+        <splash height="1242" src="res/screen/ios/Default-Landscape-736h.png" width="2208" />
+        <splash src="res/screen/ios/Default@2x~universal~anyany.png" />
+        <splash src="res/screen/ios/Default@2x~universal~comany.png" />
+        <splash src="res/screen/ios/Default@2x~universal~comcom.png" />
+        <splash src="res/screen/ios/Default@3x~universal~anyany.png" />
+        <splash src="res/screen/ios/Default@3x~universal~anycom.png" />
+        <splash src="res/screen/ios/Default@3x~universal~comany.png" />
+    </platform>
+    <platform name="windows">
+        <splash src="res/screen/windows/splashscreen.png" target="SplashScreen" />
+        <splash src="res/screen/windows/splashscreenphone.png" target="SplashScreenPhone" />
+    </platform>
+    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIzaSyC5MhQYQV41zR4_J0M9Yt_UzLzg9brN4Ns" />
+    <preference name="GOOGLE_MAPS_IOS_API_KEY" value="AIzaSyC5MhQYQV41zR4_J0M9Yt_UzLzg9brN4Ns" />
+</widget>

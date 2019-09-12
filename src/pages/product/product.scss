@@ -1,3 +1,55 @@
-page-about {
-
+.product{
+    &--slider{
+        height: auto;
+    }
+    &--holder{
+        p{
+            margin: 2rem 0;
+        }
+    }
 }
+
+.cta{
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+    &--productSize{
+        border-color: $le-gold;
+        color: $le-gold;
+        margin-top: 3rem;
+    }
+    &--buy{
+        background: $le-gold;
+    }
+    &--electroneum{
+        background: $le-grey;
+        .buyWith{
+            width: 135px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.basket{
+    &--holder{
+        right: 20px;
+        top: 17px;
+        position: absolute;
+        width: 35px;
+        #basket--counter{
+            color: white;
+            position: absolute;
+            right: 7px;
+            background: $le-gold;
+            border-radius: 10px;
+            padding: 0 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        img{
+            width: 50px;
+            fill: #999;
+        }
+    }
+}
+

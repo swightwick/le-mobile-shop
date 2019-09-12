@@ -4,13 +4,48 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <img src="assets/imgs/header.jpg">
-  <p>
-    We support and promote the creative life. Put Less effort into the boring parts of life, and focus on being creative.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  </p>
-  <button ion-button (click)="YourFancyButton()">Button</button>
+<ion-content>
+  <div class="home--header">
+    <ion-slides loop="true" autoplay="5000" pager>
+      <ion-slide>
+        <img src="assets/imgs/home-slider/logo.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/home-slider/cream.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/home-slider/cph.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/home-slider/maybelean.jpg">
+      </ion-slide>
+    </ion-slides>
+    <h2>Less Effort Clothing</h2>
+  </div>
+  <div padding>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.<br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <a (click)="homeProductLink()">
+      <div class="home--promoProduct">
+        <h3>Above & Below</h3>
+        <img src="assets/imgs/above-below.jpg">
+      </div>
+    </a>
+  </div>
+  <div padding>
+    <div class="product--list">
+      <img src="assets/imgs/tees/sprocket.jpg">
+      <h3>SPROCKET SCRIPT</h3>
+    </div>
+    <div class="product--list">
+      <img src="assets/imgs/tees/cid.jpg">
+      <h3>CID</h3>
+    </div>
+    <div class="product--list">
+      <img src="assets/imgs/tees/cream.jpg">
+      <h3>CASH RUINS</h3>
+    </div>
+  </div>
 </ion-content>

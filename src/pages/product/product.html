@@ -1,9 +1,41 @@
 <ion-header>
   <ion-navbar>
     <img src="assets/imgs/logo-full.svg" class="logo">
+    <div class="basket--holder">
+      <img src="assets/imgs/cart-icon.svg">
+      <span id="basket--counter"></span>
+    </div>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-my product
+  <ion-slides class="product--slider" loop="true" autoplay="5000" pager>
+    <ion-slide>
+      <img src="assets/imgs/product/above-below-tshirt.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/product/above-below-alt.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/product/copenhagen-tshirt-underground.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/product/copenhagen-tshirt.jpg">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/product/london.jpg">
+    </ion-slide>
+  </ion-slides>
+
+  <div padding class="product--holder">
+    <h1>Above & Below pack</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <button ion-button block outline (click)="presentActionSheet()" class="cta cta--productSize">Select Size</button>
+    <button ion-button block (click)="cartAnimation()" class="cta cta--buy">Add to Cart</button>
+    <button ion-button block class="cta cta--electroneum">Buy with<img src="assets/imgs/electroneum-logo.svg"class="buyWith"></button>
+  </div>
+
 </ion-content>

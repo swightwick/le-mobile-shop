@@ -1,0 +1,14 @@
+{
+  "products": {
+    "cream": {
+      "name": "Cash Ruins",
+      "image": "./image.jpg",
+      "copy": "something"
+    },
+    "cream2": {
+      "name": "Cash Ruins",
+      "image": "./image.jpg",
+      "copy": "something"
+    }
+  }
+}
