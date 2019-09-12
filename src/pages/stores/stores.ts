@@ -1,10 +1,8 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { IonicPage } from 'ionic-angular';
 import { NavController } from 'ionic-angular';
 
 declare var google;
 
-@IonicPage()
 @Component({
   selector: 'page-stores',
   templateUrl: 'stores.html'
